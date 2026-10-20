@@ -8,4 +8,6 @@ Other contributors:
 - [s27944](https://github.com/s27944)
 - [julaparol](https://github.com/julaparol)
 - [KarolinaSkibinska](https://github.com/KarolinaSkibinska)
+
+  
 Project managed by [karpo-pja](https://github.com/karpo-pja)
