@@ -1,0 +1,65 @@
+# ---------- Unreal Engine (TheForgottenPyramid) ----------
+/TheForgottenPyramid/Binaries/
+/TheForgottenPyramid/Build/*/
+/TheForgottenPyramid/DerivedDataCache/
+/TheForgottenPyramid/Intermediate/
+/TheForgottenPyramid/Saved/
+/TheForgottenPyramid/.vs/
+/TheForgottenPyramid/*.sln
+/TheForgottenPyramid/*.suo
+/TheForgottenPyramid/*.sdf
+/TheForgottenPyramid/*.opensdf
+/TheForgottenPyramid/*.VC.db
+/TheForgottenPyramid/*.VC.opendb
+/TheForgottenPyramid/*.xcworkspace
+/TheForgottenPyramid/*.xcodeproj
+
+# Plugin build output (keep plugin Binaries tracked)
+/TheForgottenPyramid/Plugins/*/Intermediate/
+/TheForgottenPyramid/Plugins/*/Saved/
+/TheForgottenPyramid/Plugins/*/DerivedDataCache/
+!/TheForgottenPyramid/Plugins/RemotePython/Binaries/
+
+# Python server
+/TheForgottenPyramid/Plugins/RemotePython/FlaskServer/Embedded/
+/TheForgottenPyramid/Plugins/RemotePython/FlaskServer/.idea/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+
+# ---------- GameLauncher (.NET / WPF) ----------
+bin/
+obj/
+.vs/
+*.user
+*.suo
+*.userprefs
+*.csproj.user
+*.nupkg
+TestResults/
+publish/
+
+# ---------- IDEs / editors ----------
+.idea/
+.vscode/
+*.code-workspace
+*.swp
+*.swo
+*~
+
+# ---------- OS junk ----------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+
+# ---------- Logs / temp ----------
+*.log
+*.tmp
+*.temp
+*.bak

@@ -1,0 +1,54 @@
+﻿<Window x:Class="GameLauncher.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GameLauncher.frontend"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="450" MinHeight="450" MaxHeight="450"
+        Width="800" MinWidth="800" MaxWidth="800">
+    <Grid>
+        <!--BACKGROUND-->
+        <Grid.Background>
+            <ImageBrush ImageSource="pack://application:,,,/GameLauncher;Component/Images/background.png"/>   
+        </Grid.Background>
+        <Grid>
+            <!--MAIN GRID-->
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+        
+        
+            <!--HEADER-->
+            <Border Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="600" Height="60"
+                       Margin="0,10,0,10" Background="#CC000000" CornerRadius="10">
+                <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" Text="THE FORGOTTEN PYRAMID" 
+                           FontSize="42" FontFamily="{StaticResource KaushanFont}" FontWeight="Bold" Foreground="#FFE69138"/>
+            </Border>
+            
+            <!--MAIN CONTENT-->
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="300"/>
+                    <ColumnDefinition Width="500"/>
+                </Grid.ColumnDefinitions>
+                <local:MessageConsole Grid.Column="0" x:Name="MessageConsolePanel"/>
+            </Grid>
+        
+            <!--CONTROLS-->
+            <Border Grid.Row="2" Margin="45,15,45,15" Background="#CC000000" CornerRadius="10">
+                <Grid Margin="5,5,5,5">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition Width="150"/>
+                    </Grid.ColumnDefinitions>
+                    <local:TextProgressBar Grid.Column="0" x:Name="TextLoadBar"/>
+                    <local:MainButton x:Name="Btn" Grid.Column="1" Click="MainButton_Click" Action="INSTALL"/>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
